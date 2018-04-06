@@ -1,0 +1,12 @@
+[submodule "sessions/python"]
+	path = sessions/python
+	url = git@github.com:DHRI-Curriculum/python.git
+[submodule "sessions/command-line"]
+	path = sessions/command-line
+	url = git@github.com:DHRI-Curriculum/command-line.git
+[submodule "sessions/git"]
+	path = sessions/git
+	url = git@github.com:DHRI-Curriculum/git.git
+[submodule "sessions/databases"]
+	path = sessions/databases
+	url = git@github.com:DHRI-Curriculum/databases.git
