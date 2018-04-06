@@ -1,0 +1,938 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Exploring text data · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="grep.html" />
+    
+    
+    <link rel="prev" href="pipes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../philosophy.html">
+            
+                <a href="../../../philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../core.html">
+            
+                <a href="../../../core.html">
+            
+                    
+                    Core Sessions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../intro-command-line/NESTED-README.html">
+            
+                <a href="../../../intro-command-line/NESTED-README.html">
+            
+                    
+                    Command line
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="what-is-the-command-line.html">
+            
+                <a href="what-is-the-command-line.html">
+            
+                    
+                    What's the command line?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="getting-to-the-command-line.html">
+            
+                <a href="getting-to-the-command-line.html">
+            
+                    
+                    Getting to the command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="navigation.html">
+            
+                <a href="navigation.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="creating-files-and-folders.html">
+            
+                <a href="creating-files-and-folders.html">
+            
+                    
+                    Creating files and folders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="creating_a_cheat_sheet.html">
+            
+                <a href="creating_a_cheat_sheet.html">
+            
+                    
+                    Creating a cheat sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="pipes.html">
+            
+                <a href="pipes.html">
+            
+                    
+                    Pipes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.7" data-path="data.html">
+            
+                <a href="data.html">
+            
+                    
+                    Exploring text data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="grep.html">
+            
+                <a href="grep.html">
+            
+                    
+                    Searching text data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="other-commands.html">
+            
+                <a href="other-commands.html">
+            
+                    
+                    Other useful commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="challenges.html">
+            
+                <a href="challenges.html">
+            
+                    
+                    Further challenges
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../git/">
+            
+                <a href="../../git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../git/outline.html">
+            
+                <a href="../../git/outline.html">
+            
+                    
+                    Workshop outline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../git/commandline.html">
+            
+                <a href="../../git/commandline.html">
+            
+                    
+                    Review of the command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../git/concept.html">
+            
+                <a href="../../git/concept.html">
+            
+                    
+                    What is Git, GitHub and Markdown?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../git/gitconfig.html">
+            
+                <a href="../../git/gitconfig.html">
+            
+                    
+                    Configure Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../../git/gitinit.html">
+            
+                <a href="../../git/gitinit.html">
+            
+                    
+                    Initialize Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../../git/github.html">
+            
+                <a href="../../git/github.html">
+            
+                    
+                    Connecting to GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../../git/gitaction.html">
+            
+                <a href="../../git/gitaction.html">
+            
+                    
+                    Git add, commit, and push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../../git/gitpull.html">
+            
+                <a href="../../git/gitpull.html">
+            
+                    
+                    Git for collaboration: cloning and pulling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../python/">
+            
+                <a href="../../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../python/sections/installation.html">
+            
+                <a href="../../python/sections/installation.html">
+            
+                    
+                    Getting set up
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../python/sections/repl.html">
+            
+                <a href="../../python/sections/repl.html">
+            
+                    
+                    Interacting with Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../../python/sections/types.html">
+            
+                <a href="../../python/sections/types.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../../python/sections/variables.html">
+            
+                <a href="../../python/sections/variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../../python/sections/run.html">
+            
+                <a href="../../python/sections/run.html">
+            
+                    
+                    Your first script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../../python/sections/multiline.html">
+            
+                <a href="../../python/sections/multiline.html">
+            
+                    
+                    Multi-line string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../../python/sections/loops.html">
+            
+                <a href="../../python/sections/loops.html">
+            
+                    
+                    Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../../python/sections/conditionals.html">
+            
+                <a href="../../python/sections/conditionals.html">
+            
+                    
+                    Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../../python/sections/input.html">
+            
+                <a href="../../python/sections/input.html">
+            
+                    
+                    Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../../python/sections/google.html">
+            
+                <a href="../../python/sections/google.html">
+            
+                    
+                    Using Google
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../../python/sections/importing.md">
+            
+                <span>
+            
+                    
+                    Importing modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../../python/sections/motivate.html">
+            
+                <a href="../../python/sections/motivate.html">
+            
+                    
+                    A little motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../../python/sections/resources.html">
+            
+                <a href="../../python/sections/resources.html">
+            
+                    
+                    Python resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../databases/">
+            
+                <a href="../../databases/">
+            
+                    
+                    Databases
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../databases/sections/0-dbintro.html">
+            
+                <a href="../../databases/sections/0-dbintro.html">
+            
+                    
+                    Introduction to databases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../databases/sections/1-builddb.html">
+            
+                <a href="../../databases/sections/1-builddb.html">
+            
+                    
+                    Building a database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../databases/sections/2-buildtable.html">
+            
+                <a href="../../databases/sections/2-buildtable.html">
+            
+                    
+                    Building tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../databases/sections/3-insertdata.html">
+            
+                <a href="../../databases/sections/3-insertdata.html">
+            
+                    
+                    Inserting data into tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../../databases/sections/4-updatefield.html">
+            
+                <a href="../../databases/sections/4-updatefield.html">
+            
+                    
+                    Updating table fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../../databases/sections/5-foreignkeys.html">
+            
+                <a href="../../databases/sections/5-foreignkeys.html">
+            
+                    
+                    Foreign keys!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="../../databases/sections/6-buildtable_challenge.html">
+            
+                <a href="../../databases/sections/6-buildtable_challenge.html">
+            
+                    
+                    Challenge: Build more tables!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.8" data-path="../../databases/sections/7-commonqueries.html">
+            
+                <a href="../../databases/sections/7-commonqueries.html">
+            
+                    
+                    General database queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.9" data-path="../../databases/sections/8-innerjoin.html">
+            
+                <a href="../../databases/sections/8-innerjoin.html">
+            
+                    
+                    Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.10" data-path="../../databases/sections/9-importcsv.html">
+            
+                <a href="../../databases/sections/9-importcsv.html">
+            
+                    
+                    Importing a csv file into a SQL table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.11" data-path="../../databases/sections/10-usefulqueries.html">
+            
+                <a href="../../databases/sections/10-usefulqueries.html">
+            
+                    
+                    More querying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.12" data-path="../../databases/sections/11-querieschallenge.html">
+            
+                <a href="../../databases/sections/11-querieschallenge.html">
+            
+                    
+                    Challenge: Use queries to summarize your data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.13" data-path="../../databases/sections/12-excel_v_db.html">
+            
+                <a href="../../databases/sections/12-excel_v_db.html">
+            
+                    
+                    Databases vs. Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.14" data-path="../../databases/sections/13-pyplussql-pseudo.html">
+            
+                <a href="../../databases/sections/13-pyplussql-pseudo.html">
+            
+                    
+                    SQL + Python = Awesome!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Exploring text data</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="exploring-text-data">Exploring text data</h2><p>So far the only text file we&apos;ve been working with is our cheat sheet. Now, this is where the command line can be a very powerful tool: let&apos;s try working with a large text file, one that would be too large to work with by hand.</p><p>Let&apos;s download the data we&apos;re going to work with:</p><p><a href="http://smythp.com/hosted/nypl_items.csv" target="_blank">Download nypl_items.csv</a></p><p>Once it&apos;s downloaded, move it from your Downloads folder to the <code>projects</code> folder on your desktop.</p><p>Our data set is a list of public domain items from the New York Public Library. It&apos;s in .csv format, which is a plain text spreadsheet format. CSV stands for &quot;comma separated values,&quot; and each field in the spreadsheet is separated with a comma. It&apos;s all still plain text, though, so we can manipulate the data using the command line.</p><h3 id="viewing-data-in-the-command-line">Viewing data in the command line</h3><p>Try using <code>cat</code> to look at the data. You&apos;ll find it all goes by too fast to get any sense of it. (You can do Control-C to cancel the output if it&apos;s taking too long.)</p><p>Instead, let&apos;s use another tool to get the data one page at a time:</p><pre><code>$ less nypl_items.csv
+[...]</code></pre>
+<p>This gives you a paginated view of the data. You can use <code>Control-v</code> and <code>Alt-v</code>to move down or up one page. (On Macs, use <code>&lt;Command-v&gt;</code> and <code>&lt;Option-v&gt;</code>.) Once you&apos;re done, hit <code>q</code> to return to the command line.</p><p>Let&apos;s try two more commands for viewing the contents of a file:</p><pre><code>$ head nypl_items.csv
+[...]
+$ tail nypl_items.csv
+[...]</code></pre>
+<p>These commands print out the first and last sections of the file respectively.</p><h3 id="cleaning-the-data">Cleaning the data</h3><p>We didn&apos;t tell you this before, but there are duplicate lines in our data! Two, to be exact. Before we try removing them, let&apos;s see how many entries are in our .csv file:</p><pre><code>$ cat nypl_items.csv | wc -l
+100001</code></pre>
+<p>This tells us there are 100,001 lines in our file. The <code>wc</code> tool stands for &quot;word count,&quot; but it can also count characters and lines in a file. We tell <code>wc</code> to count lines by using the <code>-l</code> flag. If we wanted to count characters, we could use <code>wc -m</code>.</p><p>To find and remove duplicate lines, we can use the <code>uniq</code> command. Let&apos;s try it out:</p><pre><code>$ cat nypl_items.csv | uniq | wc -l
+99999</code></pre>
+<p>OK, the count went down by two because the <code>uniq</code> command removed the duplicate lines. But which lines were duplicated?</p><pre><code>$ $ cat nypl_items.csv | uniq -d
+[...]</code></pre>
+<p>The <code>uniq</code> command with the <code>-d</code> flag prints out the lines that have duplicates.</p><h3 id="challenge">Challenge</h3><p>Use the commands you&apos;ve learned so far to create a new version of the <code>nypl_items.txt</code> file. (Hint: redirects are your friend.)</p><p><a href="pipes.html">&lt;&lt;&lt; Previous</a> - <a href="grep.html">Next &gt;&gt;&gt;</a></p><p><img alt="exploring data" src="data.gif"></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pipes.html" class="navigation navigation-prev " aria-label="Previous page: Pipes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="grep.html" class="navigation navigation-next " aria-label="Next page: Searching text data">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Exploring text data","level":"1.3.1.7","depth":3,"next":{"title":"Searching text data","level":"1.3.1.8","depth":3,"path":"sessions/command-line/sections/grep.md","ref":"sessions/command-line/sections/grep.md","articles":[]},"previous":{"title":"Pipes","level":"1.3.1.6","depth":3,"path":"sessions/command-line/sections/pipes.md","ref":"sessions/command-line/sections/pipes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"python":"./sessions/python/sections","command-line":"./sessions/command-line/sections","git":"./sessions/git","databases":"./sessions/databases/sections"},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sessions/command-line/sections/data.md","mtime":"2018-04-06T20:12:40.371Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2018-04-06T21:18:55.613Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
