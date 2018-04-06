@@ -1,0 +1,9 @@
+{
+	"variables": {
+		"python": "./sessions/python/sections",
+		"command-line": "./sessions/command-line/sections",
+		"git": "./sessions/git",
+		"databases": "./sessions/databases/sections"
+	}
+}
+
