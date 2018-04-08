@@ -5,7 +5,7 @@
     "plugins": ["insert-logo"],
     "pluginsConfig": {
         "insert-logo": {
-            "url": "static/gcdi_logo.jpg",
+            "url": "https://dhri-curriculum.github.io/curriculum/static/gcdi_logo.jpg",
             "style": "background: none;"
         }
     }
