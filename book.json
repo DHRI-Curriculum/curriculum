@@ -1,9 +1,13 @@
 {
-	"variables": {
-		"python": "./sessions/python/sections",
-		"command-line": "./sessions/command-line/sections",
-		"git": "./sessions/git",
-		"databases": "./sessions/databases/sections"
-	}
+    "styles": {
+    	"website": "static/cms.css"
+    },
+    "plugins": ["insert-logo"],
+    "pluginsConfig": {
+        "insert-logo": {
+            "url": "static/gcdi_logo.jpg",
+            "style": "background: none;"
+        }
+    }
 }
 

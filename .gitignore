@@ -6,4 +6,4 @@ __pycache__/
 .python-version
 .#*
 _book
-
+node_modules

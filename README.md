@@ -1,8 +1,5 @@
 ![GCDRI logo](gcdri_logo_white.png)
 
-{{ book }}
-{{ book.command-line }}
-
 # Overview
 
 The GC Digital Research Institute (GCDRI) is a week-long course in digital research methods held at [The Graduate Center, CUNY](https://www.gc.cuny.edu/Home). Organized by [Graduate Center Digital Initiatives](https://gcdi.commons.gc.cuny.edu/) (GCDI), this intensive course is designed to provide an accessible introduction to technologies frequently used in serious digital research, including the command line, databases, the Python programming language, and the git version control system. Building on these core skills, later sessions in the GCDRI focus on more specialized approaches, such as natural language processing, machine learning, mapping, and data collection with APIs.
