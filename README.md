@@ -17,4 +17,4 @@ The intensive pedagogical model has also been taking root within the academy. Th
 
 Inspired by these models of intensive training both in and out of the academy, and with the generous assistance of a CUNY Strategic Investment Initiative grant, GCDI introduced the Digital Research Institute in summer 2015. Heavy demand for placement led to an expansion of the Institute from 30 participants in 2015 to 60 in summer 2016. The Institute, reflecting the interdisciplinary concerns of GCDI and the Digital Fellows, was designed to engage scholars in the sciences, social sciences, and  humanities. This is achieved by combining a foundational core in four flexible and widely used technologies with supplemental sessions in areas of more specialized interest. The Institute also emphasizes skills that contribute to the growth of a community of sustainable digital practice at the GC, offering workshops on outreach, grant writing, and project life cycle management. 
 <br><br>
-![people at the first GCDRI working on laptops](COVER.jpg)
+![people at the first GCDRI working on laptops](static/COVER.jpg)
