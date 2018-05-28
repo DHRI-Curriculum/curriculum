@@ -6,6 +6,8 @@ Digital Research Institute Cheat Sheet
       * [Glossary](#glossary)
          * [Synonyms for the command line](#synonyms-for-the-command-line)
          * [Other Terms](#other-terms)
+   * [Git](#git)
+      * [Definitions](#definitions)
    * [Python](#python)
       * [Python from the Terminal](#python-from-the-terminal)
       * [Python Syntax and Commands](#python-syntax-and-commands)
@@ -18,8 +20,6 @@ Digital Research Institute Cheat Sheet
          * [Conditionals](#conditionals)
          * [Input](#input)
          * [Importing Libraries](#importing-libraries)
-   * [Git](#git)
-      * [Definitions](#definitions)
 
 ## Command Line
 
@@ -91,6 +91,20 @@ Also check out [other useful commands](other-commands.md)
 *REPL* - "Read Eval Print Loop" The process of typing something in to the command line and getting something back out. Like most things to do with the command line, not as complicated (or scary) as it sounds.
 
 *Text editor* - A program for creating and editing plain text files. Unlike word processors such as LibreOffice and Word, which create complex documents in the form of archives that include formatting information and other metadata, a plain text editor creates a single file. Programmers tend to use plain text files because computers can work with them easily. Sublime Text, Nano, and VI are examples of text editors.
+
+## Git
+
+### Definitions
+
+*version control system (VCS)* - A tool for keeping track of versions of files in a project. They allow for collaboration in a team, storing work in multiple locations, and reverting back to a previous state of the project.
+
+*git* - Git is a version control tool. It lives on your local computer and can be accessed through the command line.
+
+*GitHub* - GitHub is a proprietary cloud service, like Twitter or Google Docs, that hosts git repositories online. GitHub also provides issue tracking and other collaboration features.
+
+*markup* - Markup languages allow you to format things, whether they're documents, posters, or websites. HTML is a markup language, as is LaTeX.
+
+*markdown* - Markdown is a specific markup language designed to be readable as code, not just when it's displayed. That makes it fun to write in, at least compared to HTML. Markdown is provides a readable syntax for a subset of HTML, such as headings, lists, and links. These tutorials are written in markdown.
 
 ## Python
 
@@ -244,16 +258,3 @@ To use a function from the random library, we use a special dot (`.`) syntax:
 random_number = random.randint(0, 100)
 print("My random number is", random_number)
 ```
-## Git
-
-### Definitions
-
-*version control system (VCS)* - A tool for keeping track of versions of files in a project. They allow for collaboration in a team, storing work in multiple locations, and reverting back to a previous state of the project.
-
-*git* - Git is a version control tool. It lives on your local computer and can be accessed through the command line.
-
-*GitHub* - GitHub is a proprietary cloud service, like Twitter or Google Docs, that hosts git repositories online. GitHub also provides issue tracking and other collaboration features.
-
-*markup* - Markup languages allow you to format things, whether they're documents, posters, or websites. HTML is a markup language, as is LaTeX.
-
-*markdown* - Markdown is a specific markup language designed to be readable as code, not just when it's displayed. That makes it fun to write in, at least compared to HTML. Markdown is provides a readable syntax for a subset of HTML, such as headings, lists, and links. These tutorials are written in markdown.
