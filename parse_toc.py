@@ -1,4 +1,5 @@
 import os
+from collections import OrderedDict
 
 sessions = os.listdir('./sessions')
 
@@ -36,3 +37,20 @@ for readme in readmes:
     toc = extract_toc(readmes[readme])
 
     tocs[readme] = toc
+
+
+# Order results in an ordered dictionary
+with open('order.config') as order_file:
+    ordered_sessions = order_file.readlines()
+
+
+    ordered_sessions_cleaned = [session.strip() for session in ordered_sessions]
+
+
+ordered_dict_tocs = OrderedDict()
+
+for session in ordered_sessions_cleaned:
+    if session in tocs:
+        ordered_dict_tocs[session] = tocs[session]
+
+tocs = ordered_dict_tocs

@@ -1,11 +1,16 @@
 from parse_toc import tocs
 
+# The text appearing at the beginning of the SUMMARY file that is stable regardless of individual sessions."
 preamble = '''# Summary
 
 * [Overview](README.md)
 * [Philosophy](philosophy.md)
 '''
 
+# Re-order sessions in the TOC list
+
+
+# Empty string to generate table of contents text for individual sessions
 sessions_summary = ''
 
 for session_name in tocs:
@@ -20,6 +25,3 @@ for session_name in tocs:
         summary_corrected_path = split_line[0] + '(' + 'sessions/%s/' % session_name + split_line[1]
         
         sessions_summary += summary_corrected_path
-
-with open('SUMMARY.md', 'w') as out_file:
-    out_file.write(preamble + sessions_summary)
